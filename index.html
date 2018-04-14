@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DOM Traversal</title>
+<link href="css/meyerReset.css" rel="stylesheet" type="text/css" media="screen">
+<link href="css/GOT_master.css" rel="stylesheet" type="text/css" media="screen">
+<!-- font awesome links -->
+<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/solid.js" integrity="sha384-P4tSluxIpPk9wNy8WSD8wJDvA8YZIkC6AQ+BfAFLXcUZIPQGu4Ifv4Kqq+i2XzrM" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/fontawesome.js" integrity="sha384-2IUdwouOFWauLdwTuAyHeMMRFfeyy4vqYNjodih+28v2ReC+8j+sLF9cK339k5hY" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+
+    <section id="imageContainer">
+      <h2 class="hidden">House Banner</h2>
+    	<div id="houseImages"> <!-- add in all of the images to make a scrolling "banner" -->
+    		<img src="images/stark.jpg" alt="stark"/>
+    		<img src="images/baratheon.jpg" alt="baratheon"/>
+    		<img src="images/lannister.jpg" alt="lannister"/>
+    		<img src="images/tully.jpg" alt="tully"/>
+    		<img src="images/greyjoy.jpg" alt="grey joy"/>
+    		<img src="images/arryn.jpg" alt="arryn"/>
+        <img src="images/targaryen.jpg" alt="targaryen"/>
+        <img src="images/tyrell.jpg" alt="tyrell"/>
+        <img src="images/frey.jpg" alt="frey"/>
+        </div>
+    </section>
+
+    <nav id="bottomNav">
+      <h2 class="hidden">House Sigils</h2>
+    	<ul id="navList">
+        	<!-- custom data attribute, allowing to pass custom data https://developer.mozilla.org/en/docs/Web/API/HTMLElement/dataset -->
+            <li><div class="sigilContainer stark" data-offset="0"></div></li>
+            <li><div class="sigilContainer baratheon" data-offset="1"></div></li>
+            <li><div class="sigilContainer lannister" data-offset="2"></div></li>
+            <li><div class="sigilContainer tully" data-offset="3"></div></li>
+            <li><div class="sigilContainer greyjoy" data-offset="4"></div></li>
+            <li><div class="sigilContainer arryn" data-offset="5"></div></li>
+            <li><div class="sigilContainer targaryen" data-offset="6"></div></li>
+            <li><div class="sigilContainer tyrell" data-offset="7"></div></li>
+            <li><div class="sigilContainer frey" data-offset="8"></div></li>
+        </ul>
+    </nav>
+
+    <h1>Choose Your House</h1><!-- replace this with the house name -->
+
+    <p class="house-info"></p><!-- replace this with house details (github gist for details) -->
+</main>
+
+<section class="lightbox">
+  <h2 class="hidden">Video Player</h2>
+    <span class="close-lightbox">x</span>
+    <!-- add video here with sources for fallback / standards -->
+    <video>
+    <source src="video/House-Stark.mp4" type="video/mp4">
+    </video>
+
+    <div class="controls">
+      <div id="skipBack">
+        <img src="images/skip_bck.svg" alt="Skip backwards" id="skipB">
+      </div>
+      <div id="pausePlay">
+        <img src="images/pause.svg" alt="pause button" id="pause" class="">
+        <img src="images/play.svg" alt="play button" id="play" class="hidden">
+      </div>
+      <div id="skipForward">
+        <img src="images/skip_fwd.svg" alt="Skip forwards" id="skipF">
+      </div>
+      <div id="seek">
+        <input type="range" min="0" max="100" value="0" step="1" id="seekSlider">
+        <p id="timeText"><span id="curTimeText"></span> / <span id="durTimeText"></span></p>
+      </div>
+    </div>
+
+</section>
+<script src="js/main.js"></script>
+</body>
+</html>

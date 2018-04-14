@@ -1,0 +1,19 @@
+<svg id="play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 455 455">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>play</title>
+  <rect id="border_play" class="cls-1" x="2.5" y="2.5" width="450" height="450" rx="30" ry="30"/>
+  <polygon id="play_icon" class="cls-2" points="369.64 227.65 119.1 83 119.1 372.3 369.64 227.65"/>
+</svg>
