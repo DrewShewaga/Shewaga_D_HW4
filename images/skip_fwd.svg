@@ -1,0 +1,20 @@
+<svg id="skip_fwd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 455 455">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>skip_fwd</title>
+  <rect id="border_skipF" class="cls-1" x="2.5" y="2.5" width="450" height="450" rx="30" ry="30"/>
+  <polygon id="play_iconF" class="cls-2" points="336.64 227.65 86.1 83 86.1 372.3 336.64 227.65"/>
+  <rect id="skip_blockF" class="cls-2" x="305.5" y="82.5" width="60" height="290"/>
+</svg>
